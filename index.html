@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<!-- COMPS 54C thru 54J -->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>I <3 My Mentors</title>
+    <meta name="author" content="Nick Hathaway">
+    <meta name="description" content="An eternal love letter for those special few who sacrifice it all">
+    <meta name="keywords" content="Chris,Todd,Mason,Huy">
+    <link rel="stylesheet" href="./reset.css" type="text/css">
+    <link rel="stylesheet" href="./main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+  </head>
+  <body>
+    <article>
+      <h1>I Love My Mentors</h1>
+      <h2>A Tanka in the Japanese Tradition</h2>
+      <section class="card">
+        <div id="heart"></div>
+        <p>I love my mentors</p>
+        <p>Oh certainly that is true</p>
+        <p>I enter the Q</p>
+        <p>And debug my code they do</p>
+        <p>My tangled spaghetti code</p>
+        <p id="byline">by Nick Hathaway</p>
+      </section>
+    </article>
+    <footer>
+      <button onClick="play()">Feel the love</button>
+      <h1>Ours Truly:</h1>
+      <section class="gallery">
+        <div class="image"></div>
+        <img src="./assets/todd.png" alt="wonderful human being #1"/>
+        <img src="./assets/chris.png" alt="wonderful human being #1"/>
+        <img src="./assets/huy.png" alt="wonderful human being #1"/>
+        <!-- COMP 56D -->
+        <audio id="audio" src="./assets/catbug.mp4" preload="auto"/>
+      </section>
+      <h2>For Your Viewing Pleasure:</h2>
+      <!-- COMP 56C -->
+      <video width="480" height="335" controls>
+          <source src="./assets/aerosmith.mp4" type="video/mp4">
+      </video>
+    </footer>
+    <!-- COMP 58G -->
+    <script>
+      function play(){
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+      
+  </body>
+</html>

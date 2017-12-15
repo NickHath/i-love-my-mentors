@@ -1,0 +1,125 @@
+body {
+  /* COMP 25D */
+  display: float;
+  /* COMP 23E */
+  background-color: #D4A0A7;
+  color: #54494B;
+  /* COMP 23D */
+  font-size: 2.5em;
+  font-family: 'Amatic SC', serif;
+  font-weight: 400;
+  height: 100vh;
+  width: 100%;
+}
+h1 {
+  font-size: 3.5em;
+  font-weight: 700;
+  /* COMP 24C */
+  margin-bottom: 15px;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #F4DBD8;
+  margin-bottom: 35px;
+}
+article, footer, .card {
+  /* COMP 25E */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* COMP 24E */
+  padding: 25px;
+}
+/* COMP 22C-2 */
+.card {
+  width: 450px;
+  height: 350px;
+  background-color: #F4DBD8;
+}
+#byline {
+  color: #B9314F;
+  font-size: 0.75em;
+  margin-top: 10px;
+}
+.gallery {
+  display: flex;
+  margin-bottom: 50px;
+  /* COMP 24F */
+  box-sizing: border-box;
+}
+/* COMP 22C-4 */
+.gallery img, .image {
+  width: 250px;
+  height: 250px;
+  margin-right: 25px;
+}
+.image {
+  /* COMP 23F */
+  background-image: url('./assets/mason.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* COMP 22C-3 */
+footer > button {
+  width: 200px;
+  height: 75px;
+  color: white;
+  background-color: #B9314F;
+  font-size: 24px;
+  margin-bottom: 50px;
+  /* COMP 24D */
+  border: none;
+}
+/* COMP 22C-5 */
+button + h1 {
+  margin-bottom: 35px;
+}
+footer h2 {
+  margin-bottom: 0;
+}
+
+
+/* CSS SHAPE - HEART */
+/* COMP 22C-1 */
+#heart {
+  /* COMP 24C */
+  position: relative;
+  width: 100px;
+  height: 90px;
+}
+#heart:before,
+#heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: #B9314F;
+  -moz-border-radius: 50px 50px 0 0;
+  border-radius: 50px 50px 0 0;
+  -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+     -moz-transform-origin: 0 100%;
+      -ms-transform-origin: 0 100%;
+       -o-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+#heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+     -moz-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+       -o-transform-origin: 100% 100%;
+          transform-origin :100% 100%;
+}
